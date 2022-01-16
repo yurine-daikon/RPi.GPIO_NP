@@ -60,6 +60,11 @@ const int pin_to_gpio_nanopi [64] ={
     -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
 };
 
+const int (*pin_to_gpio)[41];
+int gpio_direction[54];
+
+rpi_info rpiinfo;
+
 int setup_error = 0;
 int module_setup = 0;
 
